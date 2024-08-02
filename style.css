@@ -142,6 +142,7 @@ footer {
 
 .body-home {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("Project-Files/home-background.jpg");
+    background-position: center;
     background-size: cover; 
     color: gold;
 }
@@ -258,4 +259,149 @@ footer {
     font-size: 18px;
     padding-top: 10px;
     padding-left: 50px;
+}
+
+/* Fleet Page Styling */
+
+.body-fleet {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url("./Project-Files/Fleet-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.airline {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: gold;
+}
+
+.boeing, 
+.airbus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    border-right: 2px solid gray;
+    border-left: 2px solid gray;
+    border-radius: 30px;
+}
+
+.boeing img, 
+.airbus img {
+    width: 60%;
+}
+
+.check-fleet-button button {
+    background: transparent;
+    border: none;
+}
+
+.check-fleet-button button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: gold;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Boeing Fleet Styling */
+
+.body-boeing-fleet {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url("./Project-Files/Boeing-fleet-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.boeing-747, 
+.boeing-777x, 
+.boeing-787, 
+.boeing-737-max {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+    padding: 20px;
+    width: 60%;
+    border: 2px solid gray;
+    border-radius: 30px;
+    margin: 30px;
+}
+
+.boeing-747 h1, 
+.boeing-777x h1, 
+.boeing-787 h1, 
+.boeing-737-max h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.boeing-747 img, 
+.boeing-777x img, 
+.boeing-787 img, 
+.boeing-737-max img {
+    width: 90%;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+/* Boeing & Airbus Fleet Styling */
+
+.airplane {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Airbus Fleet Styling */
+
+.body-airbus-fleet {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url("./Project-Files/Airbus-fleet-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.airbus-a38o, 
+.airbus-a35o, 
+.airbus-a33o, 
+.airbus-a32o {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+    padding: 20px;
+    width: 60%;
+    border: 2px solid gray;
+    border-radius: 30px;
+    margin: 30px;
+}
+
+.airbus-a38o h1, 
+.airbus-a35o h1, 
+.airbus-a33o h1, 
+.airbus-a32o h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.airbus-a38o img, 
+.airbus-a35o img, 
+.airbus-a33o img, 
+.airbus-a32o img {
+    width: 90%;
+    margin: 50px;
+    border-radius: 20px;
 }

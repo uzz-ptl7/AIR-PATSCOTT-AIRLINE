@@ -1,0 +1,261 @@
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header and Navbar Stylings */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    border-bottom: 2px solid gray;
+    border-radius: 30px;
+}
+
+header img {
+    padding-top: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding-top: 25px;
+}
+
+a {
+    color: gold;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: gold;
+    color: #000;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-weight: 400;
+}
+
+.book-button {
+    background-color: gold;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.book-button:hover {
+    background-color: rgb(255, 183, 0);
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+/* Footer Stylings */
+
+footer {
+    color: gold;
+    border-top: .2px solid gray;
+    border-radius: 20px;
+}
+
+.footer-cont {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    margin: 10px 15px;
+}
+
+.cont {
+    margin: 20px;
+}
+
+.cont a:hover {
+    background-color: gold;
+    color: #000;
+    border-radius: 10px;
+}
+
+.cont a{
+    color: gold;
+}
+
+.cont dt {
+    text-decoration: underline;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.cont dd {
+    font-size: 18px;
+} 
+
+.cont-1 a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-2 a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-links a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-3 {
+    font-size: 18px;
+    margin-top: 180px;
+    margin-right: 50px;
+} 
+
+
+/* Home Page Stylings */
+
+.body-home {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("Project-Files/home-background.jpg");
+    background-size: cover; 
+    color: gold;
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.home-content-text {
+    width: 90%;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 25px;
+    margin-right: 150px;
+}
+
+.home-content-text h2 {
+    text-align: justify;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 15px;
+}
+
+.home-content-logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content-logo img{
+    border-radius: 50%;
+}
+
+.home-book-button {
+    width: 100%;
+    margin: 80px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-book-button button {
+    background-color: gold;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.home-book-button button:hover {
+    background-color: #000;
+    color: gold;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+}
+
+/* Destinations Page Styling */
+
+.destinations-background {
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+}
+
+#destinations {
+    color: gold;
+}
+
+#destinations h1 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#destinations p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 20px 20px 40px;
+}
+
+.dest-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.dest {
+    color: gold;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+.dest dt {
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.dest dd {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 50px;
+}

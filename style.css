@@ -4,6 +4,11 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+} 
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Header and Navbar Stylings */
@@ -20,13 +25,13 @@ header img {
     padding-top: 0px;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: end;
     margin: 10px;
 }
 
-ul {
+header nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -34,14 +39,14 @@ ul {
     padding-top: 25px;
 }
 
-a {
+header nav ul li a {
     color: gold;
     font-size: 20px;
     text-decoration: none;
     padding: 10px 15px;
 }
 
-nav a:hover {
+header nav ul li a:hover {
     background-color: gold;
     color: #000;
     border-radius: 15px;
@@ -60,7 +65,7 @@ nav a:hover {
 }
 
 .book-button:hover {
-    background-color: rgb(255, 183, 0);
+    background-color: orange;
     color: #000;
     font-size: 20px;
     font-weight: 500;
@@ -77,66 +82,70 @@ footer {
     border-radius: 20px;
 }
 
-.footer-cont {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 30px;
-    margin-top: 20px;
-}
-
 .footer-content {
     display: flex;
-    margin: 10px 15px;
+    padding: 20px 50px 15px 50px;
 }
 
-.cont {
-    margin: 20px;
+.footer-nav {
+    width: 40%;
 }
 
-.cont a:hover {
-    background-color: gold;
-    color: #000;
-    border-radius: 10px;
+.footer-socials {
+    width: 40%;
 }
 
-.cont a{
+.footer-content ul {
+    display: flex;
+}
+
+.footer-content ul li {
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
     color: gold;
 }
 
-.cont dt {
-    text-decoration: underline;
-    font-size: 20px;
-    margin: 10px;
+.footer-nav h3, 
+.footer-socials h3 {
+    color: orange;
 }
 
-.cont dd {
-    font-size: 18px;
-} 
-
-.cont-1 a {
-    display: flex;
-    flex-direction: row;
+.footer-nav ul, 
+.footer-socials ul {
+    display: block;
+    justify-content: center;
     align-items: center;
 }
 
-.cont-2 a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.footer-nav ul li {
+    font-size: 15px;
 }
 
-.contact-links a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.footer-nav ul li:hover {
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 
-.cont-3 {
-    font-size: 18px;
-    margin-top: 180px;
-    margin-right: 50px;
-} 
+.footer-socials ul li a {
+    font-size: 35px;
+}
 
+.footer-socials ul li a:hover {
+    color: orange;
+}
+
+.footer-copyright {
+    width: 20%;
+    display: block;
+    justify-content: end;
+    align-items: end;
+}
 
 /* Home Page Stylings */
 
@@ -160,6 +169,7 @@ footer {
     font-size: 18px;
     line-height: 25px;
     margin-right: 150px;
+    margin-left: 50px;
 }
 
 .home-content-text h2 {
@@ -318,7 +328,7 @@ footer {
 /* Boeing Fleet Styling */
 
 .body-boeing-fleet {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url("./Project-Files/Boeing-fleet-bg.jpg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url("./Project-Files/Boeing-fleet-bg.jpg");
     background-position: center;
     background-size: cover;
 }

@@ -78,7 +78,7 @@ header nav ul li a:hover {
 
 footer {
     color: gold;
-    border-top: .2px solid gray;
+    border-top: 2px solid gray;
     border-radius: 20px;
 }
 
@@ -415,3 +415,151 @@ footer {
     margin: 50px;
     border-radius: 20px;
 }
+
+/* About Page Styling */
+
+.body-about {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.95), rgba(0,0,0,0.85)), url("Project-Files/About-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about-nav {
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    opacity: 100%;
+}
+
+.about-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 3px solid gray;
+    border-radius: 50px;
+}
+
+.about-nav ul li {
+    list-style: none;
+    border: 1px solid orange;
+    color: orange;
+    border-radius: 15px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.about-nav ul li:hover {
+    border: 1px solid gray;
+    color: gold;
+    box-shadow: 2px 2px 2px 2px gray;
+    font-weight: 600;
+}
+
+.about-page-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 300px 300px 300px;
+    color: #C0C0C0;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about-container-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+.about-container-img img {
+    border-radius: 50%;
+}
+
+.history, 
+.mission, 
+.fleet, 
+.team {
+    display: flex;
+    margin: 100px 10px;
+    border-bottom: 2px solid gray;
+    padding: 20px;
+}
+
+.history-1, 
+.mission-1, 
+.fleet-1, 
+.team-1 {
+    width: 40%;
+    padding: 30px;
+}
+
+.history-1 h1, 
+.mission-1 h1, 
+.fleet-1 h1, 
+.team-1 h1 {
+    color: #C0C0C0;
+    font-size: 120px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic, bold;
+}
+
+.history-2, 
+.mission-2, 
+.fleet-2, 
+.team-2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 30px;
+    border: 40px solid transparent;
+    border-image: url(./Project-Files/border-1.avif) 90;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+.mission, 
+.team {
+    flex-direction: row-reverse;
+}
+
+.mission-2, 
+.team-2 {
+    margin-left: 30px;
+    border-image: url(./Project-Files/border-2.avif) 80;
+}
+
+.fleet-2, 
+.team-2 {
+    flex-direction: column;
+}
+
+.fleet-2 button, 
+.team-2 button {
+    background-color: #C0C0C0;
+    color: #000;
+    padding: 15px 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.fleet-2 button:hover, 
+.team-2 button:hover {
+    background-color: #000;
+    color: #C0C0C0;
+    font-weight: 600;
+}
+
+.team {
+    border: none;
+}
+
+/* Team Page Styling */
+

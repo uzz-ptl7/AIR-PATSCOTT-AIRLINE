@@ -425,19 +425,22 @@ footer {
 }
 
 .about-nav {
-    position: sticky;
+    position: fixed;
     top: 0;
-    background-color: #000;
-    opacity: 100%;
+    left: 200px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 20px;
 }
 
 .about-nav ul {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     padding: 20px 50px;
-    border-bottom: 3px solid gray;
-    border-radius: 50px;
+    /* border: 3px solid gray;
+    border-top: none;
+    border-radius: 20px; */
 }
 
 .about-nav ul li {
@@ -447,6 +450,7 @@ footer {
     border-radius: 15px;
     padding: 8px 10px;
     cursor: pointer;
+    margin: 0px 10px;
 }
 
 .about-nav ul li:hover {
@@ -456,25 +460,51 @@ footer {
     font-weight: 600;
 }
 
-.about-page-header h1 {
+.about-container-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.about-container-header .about-slogan {
+    width: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 200px 300px 300px 300px;
+    margin: 20px;
     color: #C0C0C0;
-    font-size: 80px;
+    font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    border: 80px solid transparent;
+    border-image: url(./Project-Files/Slogan-Border-bg.jpg) 180;
 }
 
-.about-container-img {
+.about-container-header .about-departure-logo {
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px;
+    color: #C0C0C0;
+    font-size: 100px;
 }
 
-.about-container-img img {
+.about-container-header .about-arrival-logo {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #C0C0C0;
+    font-size: 100px;
+}
+
+.about-container-header .about-departure-logo i, 
+.about-container-header .about-arrival-logo i {
+    border: 1px solid gray;
     border-radius: 50%;
+    padding: 50px;
 }
 
 .history, 
@@ -485,6 +515,12 @@ footer {
     margin: 100px 10px;
     border-bottom: 2px solid gray;
     padding: 20px;
+}
+
+.history {
+    border-top: 2px solid gray;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .history-1, 
@@ -563,3 +599,114 @@ footer {
 
 /* Team Page Styling */
 
+.body-team {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url("Project-Files/Team-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.team-header {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-header h1 {
+    color: #C0C0C0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    font-weight: 600;
+    font-style: italic;
+    margin: 20px;
+    padding: 20px;
+    border: 100px solid transparent;
+    border-image: url(./Project-Files/Team-Border-bg.jpg) 150;
+}
+
+.team-header h2, 
+.staff-container-header h2 {
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 550;
+    padding: 100px;
+}
+
+.team-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-members {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.members {
+    width: 30%;
+    margin: 10px 30px; 
+    color: #C0C0C0;
+    padding: auto;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.members img {
+    width: 100%;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.members h2, 
+.members p {
+    padding: 20px;
+}
+
+.staff-members-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff-members {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px; 
+    color: #C0C0C0;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.staff-members img {
+    width: 100%;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.staff-members h2, 
+.staff-members p {
+    padding: 20px;
+}
+
+.staff-container-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
